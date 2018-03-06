@@ -2,27 +2,12 @@
 
 !include ./lib/color.inc
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+left to right direction
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
+actor User
 
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
-}
-
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+rectangle GomoCa {
+  User -- (ゲームの開始)
 }
 
 @enduml
