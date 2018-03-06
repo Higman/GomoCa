@@ -4,10 +4,13 @@
 
 left to right direction
 
-actor User
+actor ユーザ
 
 rectangle GomoCa {
-  User -- (ゲームの開始)
+  ユーザ -- (ゲームを実行する)
+  ユーザ -- (戦略を登録する)
+  ユーザ -- (盤面を作成する)
+  ユーザ -- (特定の盤面をファイルを読込/保存する)
 }
 
 @enduml
